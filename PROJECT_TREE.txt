@@ -1,0 +1,77 @@
+panorama360/
+├── backend/
+│   ├── app/
+│   │   ├── ml/
+│   │   │   ├── __init__.py
+│   │   │   ├── inference.py
+│   │   │   └── networks.py
+│   │   ├── routers/
+│   │   │   ├── __init__.py
+│   │   │   ├── assets.py
+│   │   │   ├── auth.py
+│   │   │   └── jobs.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── geometry.py
+│   │   │   └── stitch.py
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── redis_queue.py
+│   │   ├── schemas.py
+│   │   ├── security.py
+│   │   └── worker.py
+│   ├── storage/
+│   │   └── .gitkeep
+│   ├── tests/
+│   │   ├── conftest.py
+│   │   ├── test_api.py
+│   │   ├── test_geometry.py
+│   │   ├── test_ml.py
+│   │   └── test_train.py
+│   ├── weights/
+│   │   └── .gitkeep
+│   ├── Dockerfile
+│   ├── requirements-dev.txt
+│   ├── requirements.txt
+│   └── train.py
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Layout.jsx
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   ├── Viewer360.jsx
+│   │   │   └── Widgets.jsx
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── UIContext.jsx
+│   │   ├── hooks/
+│   │   │   └── useAsset.js
+│   │   ├── lib/
+│   │   │   └── api.js
+│   │   ├── pages/
+│   │   │   ├── Auth.jsx
+│   │   │   ├── Capture.jsx
+│   │   │   ├── Gallery.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Processing.jsx
+│   │   │   ├── Share.jsx
+│   │   │   ├── Upload.jsx
+│   │   │   └── View.jsx
+│   │   ├── main.jsx
+│   │   └── style.css
+│   ├── .env.example
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── nginx.conf
+│   ├── package.json
+│   └── vite.config.js
+├── .env.example
+├── .gitignore
+├── PROJECT_TREE.txt
+├── README.md
+├── TEST_REPORT.md
+└── docker-compose.yml
